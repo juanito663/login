@@ -5,4 +5,4 @@ from django.db import models
 class RegistrarPersonas(models.Model):
     username = models.CharField(max_length=10)
     correo = models.EmailField(max_length=25)
-    password = models.CharField()
+    password = models.CharField(max_length=8)
